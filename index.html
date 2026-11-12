@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ZentBuy spreadsheet – Produktlinks, QC und Versand</title>
+  <meta name="description" content="ZentBuy spreadsheet auf Deutsch: Modekategorien auf HipoBuyFind entdecken, Produktlinks prüfen, Größen vergleichen und Versandkosten einschätzen.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#182920">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="ZentBuy spreadsheet – Produktlinks, QC und Versand">
+  <meta property="og:description" content="Ein deutschsprachiger Einkaufsratgeber mit Modekategorien, Maßvergleich und einer Checkliste für QC-Fotos und Versand.">
+  <!-- index.html. Redaktionelle Recherche: Suchtreffer unter anderem von SSFinds, Zentbuyspreadsheet.com, Zentbuy-spreadsheets.com, ChinaGrails, Mixfittio, Linktree, W2C Spreadsheet, Zentbuy-spreadsheet.site, GRAILS und Zentbuy.org. Die genaue Reihenfolge auf der ersten Google-Ergebnisseite war nicht verifizierbar. -->
+  <style>
+    :root{color-scheme:light;--ink:#182920;--paper:#f8f6ef;--soft:#e9eee5;--line:#c9d1c6;--accent:#f3c987}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid #ad4b0b;outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    header,footer{background:var(--ink);color:var(--paper)}
+    header .wrap,footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-block:1rem}
+    .brand{font-weight:750;letter-spacing:.02em;text-decoration:none}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2{font-family:Georgia,serif;font-weight:600;line-height:1.08}
+    h1{font-size:clamp(2.6rem,7vw,5.7rem);letter-spacing:-.05em}
+    h2{font-size:clamp(1.85rem,4vw,3rem);letter-spacing:-.035em}
+    h3{line-height:1.3}
+    p+p,h2+p,h3+p{margin-top:.7rem}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1rem,4vw,4rem);align-items:center;padding-block:clamp(1.5rem,4vw,3.5rem)}
+    .hero p{max-width:57ch;margin-top:1rem}
+    .button{display:inline-block;margin-top:1.1rem;padding:.65rem 1rem;background:var(--accent);border-radius:.4rem;font-weight:750;text-decoration:none}
+    .button:hover{background:#f9dbab}
+    img{display:block;width:100%;object-fit:contain;background:#eeeee8}
+    .hero img{height:auto;aspect-ratio:4/3;border-radius:.6rem}
+    figcaption,.note{font-size:.875rem}
+    figcaption{padding-top:.35rem}
+    section{margin-bottom:clamp(2rem,5vw,4rem)}
+    .categories{padding:clamp(1rem,3vw,2rem);background:var(--soft);border-radius:.6rem}
+    .categories ul,.looks,.guides{display:grid;gap:.8rem;list-style:none;padding:0;margin:1rem 0 0}
+    .categories ul{grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr))}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.35rem;min-height:3rem;padding:.45rem .75rem;border:1px solid var(--line);border-radius:.4rem;background:var(--paper);text-decoration:none;font-weight:650}
+    .categories a:hover{background:#fff}
+    .looks{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .looks img{height:auto;aspect-ratio:1;border-radius:.5rem}
+    .guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+    article{padding:1rem;border-top:2px solid var(--ink);background:#fffdf7}
+    details{border-bottom:1px solid var(--line);padding:.8rem 0}
+    details:first-of-type{margin-top:.7rem}
+    summary{cursor:pointer;font-weight:700}
+    details p{padding-top:.4rem;max-width:75ch}
+    @media(max-width:680px){.hero,.guides{grid-template-columns:1fr}.looks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "de",
+    "name": "ZentBuy spreadsheet – Produktlinks, QC und Versand",
+    "description": "Deutschsprachiger Einkaufsratgeber zu Produktlinks, Größen, QC-Fotos und Versand.",
+    "mainEntity": [
+      {"@type":"Question","name":"Was ist ein ZentBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Ein ZentBuy spreadsheet ist eine nach Kategorien geordnete Sammlung von Produktlinks. Die Kategorien in diesem Ratgeber führen zum Katalog von HipoBuyFind."}},
+      {"@type":"Question","name":"Was zeigen QC-Fotos?","acceptedAnswer":{"@type":"Answer","text":"QC-Fotos zeigen sichtbare Merkmale eines Artikels, etwa Farbe, Nähte, Etiketten und den Zustand der Oberfläche. Die Echtheit eines Markenartikels lässt sich anhand dieser Fotos allein nicht belegen."}},
+      {"@type":"Question","name":"Welche Größe sollte ich wählen?","acceptedAnswer":{"@type":"Answer","text":"Miss ein gut passendes Vergleichsstück und gleiche die Werte in Zentimetern mit der Größentabelle des konkreten Angebots ab. Prüfe bei Schuhen, ob die Tabelle Fußlänge oder Innenlänge angibt."}},
+      {"@type":"Question","name":"Wie schätze ich den Gesamtpreis für Deutschland ein?","acceptedAnswer":{"@type":"Answer","text":"Addiere Warenpreis, gegebenenfalls Inlandsversand und Agentengebühren, internationalen Versand sowie mögliche Einfuhr- und Zustellkosten. Prüfe Währung, Abrechnungsgewicht und Leistungsumfang vor der Zahlung."}},
+      {"@type":"Question","name":"Ist dieser Ratgeber ein offizielles ZentBuy-Angebot?","acceptedAnswer":{"@type":"Answer","text":"Nein. Dies ist ein unabhängiger Einkaufsratgeber. Die Kategorielinks öffnen HipoBuyFind. Die Markenfotos dienen als Anschauungsbeispiele und sagen nichts über den Bestand im verlinkten Katalog aus."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/craud/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <span>Einkaufsratgeber auf Deutsch</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>ZentBuy spreadsheet</h1>
+        <p>Finde den Einstieg über Schuhe, Kleidung und Accessoires. Vergleiche anschließend Produktlinks, Maße und QC-Fotos und rechne die Versandkosten ein. Die Kategorien öffnen den Katalog von HipoBuyFind.</p>
+        <a class="button" href="https://www.hipobuyfind.com">HipoBuyFind öffnen <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure>
+        <img src="https://alssports.vteximg.com.br/arquivos/ids/3880705/10613661x1238466_alt1.jpg?v=639047806774730000" width="720" height="540" fetchpriority="high" loading="eager" alt="Weißer Nike Air Force 1 Texture in der Seitenansicht">
+        <figcaption>Modellbeispiel: Nike Air Force 1 Texture</figcaption>
+      </figure>
+    </div>
+    <section class="categories" aria-labelledby="kategorien">
+      <h2 id="kategorien">Mode nach Kategorie</h2>
+      <nav aria-label="Kategorien auf HipoBuyFind">
+        <ul>
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Schuhe <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jacken <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Kopfbedeckungen <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Unterwäsche <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Trikots <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </section>
+    <section aria-labelledby="modelle">
+      <h2 id="modelle">Vier Modelle, vier Details zum Vergleichen</h2>
+      <p class="note">Die Markenbilder zeigen Modellbeispiele. Die Verfügbarkeit im verlinkten Katalog kann abweichen.</p>
+      <div class="looks">
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-workwear-lv-denim-jacket--HTA50WPCP65L_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Louis Vuitton Workwear-Jeansjacke von vorne">
+          <figcaption>Louis Vuitton · Schnitt und Taschenposition</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1704907041/780428_3HAZQ_1000_001_100_0000_Light.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Schwarze Gucci-Baseballkappe mit geprägtem Schriftzug">
+          <figcaption>Gucci · Schirmform und Kopfumfang</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Hermès Clic H Armreif mit H-förmigem Verschluss">
+          <figcaption>Hermès · Innenumfang und Verschluss</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/B3197HOMMTD000_SBG_E01?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Silberfarbener offener Dior-Guilloché-Armreif">
+          <figcaption>Dior · Öffnung und Oberflächenstruktur</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="ratgeber">
+      <h2 id="ratgeber">Vom Produktlink zur Bestellung</h2>
+      <div class="guides">
+        <article>
+          <h3>ZentBuy Produktlinks prüfen</h3>
+          <p>Vergleiche bei einem Weidian-Produktlink die Artikelnummer, bei einem Taobao-Angebot die Varianten und bei einem 1688-Angebot auch die Mindestbestellmenge. Prüfe, ob die gewählte Farbe verfügbar ist. Wenn ein Produktlink nicht mehr funktioniert, suche nach Modellname und Artikelnummer und vergleiche das neue Angebot mit deinen Notizen.</p>
+        </article>
+        <article>
+          <h3>Sneaker und Kleidung nach Maß auswählen</h3>
+          <p>Vergleiche bei Sneakern Fußlänge, Innenlänge und EU-Größe. Bei einem Hoodie helfen Brustweite, Schulterbreite und Rückenlänge, bei einer Jacke zusätzlich die Ärmellänge. Lege eine Hose flach hin und miss Bundweite und Innenbeinlänge. Bei Trikots lohnt sich ein Blick auf die Maße der konkreten Version.</p>
+        </article>
+        <article>
+          <h3>ZentBuy QC-Fotos richtig lesen</h3>
+          <p>QC steht für Qualitätskontrolle. Falls Lagerfotos vorliegen, prüfe das Größenetikett, sichtbare Beschädigungen, Nähte und die Symmetrie der Schuhsohlen. Bei Schmuck helfen Detailaufnahmen vom Verschluss. Wenn die Fotos eine Abweichung zeigen, prüfe die Rückgabe- oder Umtauschbedingungen, bevor du den internationalen Versand freigibst.</p>
+        </article>
+        <article>
+          <h3>ZentBuy Versand nach Deutschland planen</h3>
+          <p>Vergleiche beim Versand aus China den Warenwert, die Versandkosten und mögliche Einfuhrkosten. Frage nach den Paketmaßen, wenn du mehrere Artikel in einem Paket zusammenfassen möchtest. Ein sperriger Schuhkarton kann das Volumengewicht erhöhen. Für Lieferungen nach Österreich oder in die Schweiz stelle das jeweilige Zielland in der Versandabfrage ein.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen</h2>
+      <details open>
+        <summary>Was ist ein ZentBuy spreadsheet?</summary>
+        <p>Ein ZentBuy spreadsheet ist eine nach Kategorien geordnete Sammlung von Produktlinks. Die Kategorien in diesem Ratgeber führen zum Katalog von HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Was zeigen QC-Fotos?</summary>
+        <p>QC-Fotos zeigen sichtbare Merkmale eines Artikels, etwa Farbe, Nähte, Etiketten und den Zustand der Oberfläche. Die Echtheit eines Markenartikels lässt sich anhand dieser Fotos allein nicht belegen.</p>
+      </details>
+      <details>
+        <summary>Welche Größe sollte ich wählen?</summary>
+        <p>Miss ein gut passendes Vergleichsstück und gleiche die Werte in Zentimetern mit der Größentabelle des konkreten Angebots ab. Prüfe bei Schuhen, ob die Tabelle Fußlänge oder Innenlänge angibt.</p>
+      </details>
+      <details>
+        <summary>Wie schätze ich den Gesamtpreis für Deutschland ein?</summary>
+        <p>Addiere Warenpreis, gegebenenfalls Inlandsversand und Agentengebühren, internationalen Versand sowie mögliche Einfuhr- und Zustellkosten. Prüfe Währung, Abrechnungsgewicht und Leistungsumfang vor der Zahlung.</p>
+      </details>
+      <details>
+        <summary>Ist dieser Ratgeber ein offizielles ZentBuy-Angebot?</summary>
+        <p>Nein. Dies ist ein unabhängiger Einkaufsratgeber. Die Kategorielinks öffnen HipoBuyFind. Die Markenfotos dienen als Anschauungsbeispiele und sagen nichts über den Bestand im verlinkten Katalog aus.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Unabhängiger Einkaufsratgeber</span>
+      <a href="https://www.hipobuyfind.com">Zum Katalog auf HipoBuyFind</a>
+    </div>
+  </footer>
+</body>
+</html>
